@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble Sebas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- 🧃 Banner superior -->
+  <div class="top-banner">
+    <p>
+      🥤 ¡Envío GRATIS por compras superiores a $30.000!
+      📍 Entregamos en todo Bogotá 🛵 ¡Burbujea tu día con Bubble Sebas! ✨
+      ¡Bubble Sebas te llena de sabor y alegría! Prueba nuestras nuevas mezclas con tapioca y frutas 🍓🍑
+      ¡Ordena <a href="#">ahora!</a>.
+    </p>
+  </div>
+
+  <!-- 🧋 Barra de navegación -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="Logo_page-0001.jpg" alt="Logo de la marca">
+    </div>
+
+    <div class="right-section">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar por productos...">
+        <button id="searchBtn"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="login-btn"><i class="fas fa-user"></i> Iniciar sesión</button>
+        <button class="cart-btn"><i class="fas fa-shopping-cart"></i> Mi carrito</button>
+      </div>
+    </div>
+  </header>
+  
+<!-- 🟢 Barra de pestañas -->
+<nav class="sub-navbar">
+  <ul>
+    <li class="active" data-tab="productos"><a href="#">Nuestros Productos</a></li>
+    <li data-tab="origen"><a href="#">Origen</a></li>
+    <li data-tab="actualidad"><a href="#">Actualidad</a></li>
+    <li data-tab="sobre-nosotros"><a href="#">Sobre Nosotros</a></li>
+  </ul>
+</nav>
+
+<!-- 🟢 Contenido de las pestañas -->
+<div class="tab-content">
+
+  <!-- 🔹 TAB: Productos -->
+  <div id="productos" class="tab active">
+
+  <!-- 🧋 Sección de productos -->
+  <main>
+    <section class="productos">
+      <h2>Nuestros Bubble Teas</h2>
+      <div class="productos-grid" id="productosGrid">
+
+        <!-- Cada producto -->
+        <div class="producto">
+          <img src="bubble1.jpg" alt="Bubble Tea de Fresa">
+          <h3>Bubble Tea de Fresa</h3>
+          <p>Refrescante mezcla de té verde con fresas naturales 🍓</p>
+          <span class="precio">$10.000</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble2.jpg" alt="Bubble Tea de Mango">
+          <h3>Bubble Tea de Mango</h3>
+          <p>Dulce y tropical, con perlas de tapioca doradas 🥭</p>
+          <span class="precio">$10.000</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble3.jpg" alt="Bubble Tea de Lichi">
+          <h3>Bubble Tea de Lichi</h3>
+          <p>Un toque exótico con el sabor suave del lichi 🍈</p>
+          <span class="precio">$11.000</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble4.jpg" alt="Bubble Tea de Arándanos">
+          <h3>Bubble Tea de Arándanos</h3>
+          <p>Delicioso y antioxidante, con un color vibrante 💜</p>
+          <span class="precio">$11.500</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble5.jpg" alt="Bubble Tea de Maracuyá">
+          <h3>Bubble Tea de Maracuyá</h3>
+          <p>Ácido y dulce en perfecto equilibrio 🧡</p>
+          <span class="precio">$9.500</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble6.jpg" alt="Bubble Tea de Coco">
+          <h3>Bubble Tea de Coco</h3>
+          <p>Cremoso y suave, un clásico tropical 🥥</p>
+          <span class="precio">$10.500</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble7.jpg" alt="Bubble Tea de Melón">
+          <h3>Bubble Tea de Melón</h3>
+          <p>Frescura y dulzura natural, ideal para el calor 🍈</p>
+          <span class="precio">$10.000</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble8.jpg" alt="Bubble Tea de Taro">
+          <h3>Bubble Tea de Taro</h3>
+          <p>Sabor suave, color único y textura cremosa 💜</p>
+          <span class="precio">$11.000</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble9.jpg" alt="Bubble Tea de Durazno">
+          <h3>Bubble Tea de Durazno</h3>
+          <p>Frutal y dulce con un toque refrescante 🍑</p>
+          <span class="precio">$10.500</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble10.jpg" alt="Bubble Tea de Piña">
+          <h3>Bubble Tea de Piña</h3>
+          <p>La combinación perfecta entre dulzura y acidez 🍍</p>
+          <span class="precio">$10.000</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble11.jpg" alt="Bubble Tea de Cereza">
+          <h3>Bubble Tea de Cereza</h3>
+          <p>Un clásico con color intenso y sabor delicioso 🍒</p>
+          <span class="precio">$11.000</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble12.jpg" alt="Bubble Tea de Limón">
+          <h3>Bubble Tea de Limón</h3>
+          <p>Refrescante, ácido y perfecto para el verano 🍋</p>
+          <span class="precio">$9.000</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble13.jpg" alt="Bubble Tea de Frambuesa">
+          <h3>Bubble Tea de Frambuesa</h3>
+          <p>Una explosión de sabor y color rojo intenso ❤️</p>
+          <span class="precio">$10.500</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble14.jpg" alt="Bubble Tea de Menta">
+          <h3>Bubble Tea de Menta</h3>
+          <p>Fresco, energizante y lleno de sabor 🌿</p>
+          <span class="precio">$9.500</span>
+        </div>
+
+        <div class="producto">
+          <img src="bubble15.jpg" alt="Bubble Tea Clásico">
+          <h3>Bubble Tea Clásico</h3>
+          <p>El sabor original con leche y perlas negras 🧋</p>
+          <span class="precio">$10.000</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+    <!-- 🔹 TAB: Origen -->
+    <div id="origen" class="tab">
+      <h1>Origen del Bubble Tea</h1>
+      <p>El bubble tea, también conocido como “té de burbujas” o boba tea, tiene sus raíces en Taiwán en la década de 1980, cuando el consumo del té formaba parte esencial de la vida cotidiana, pero las nuevas generaciones empezaban a buscar experiencias más modernas, creativas y diferentes a la tradición. Se dice que un pequeño puesto de té decidió innovar agregando bolitas de tapioca, un ingrediente elaborado a partir del almidón de yuca, muy popular en Asia. Estas perlas, suaves y elásticas, transformaron el té en una bebida única: no solo se bebía, también se masticaba. Así nació una nueva experiencia sensorial y divertida que rápidamente captó la atención de los jóvenes taiwaneses.
+
+        <br>
+        <br>
+
+      Con el paso de los años, el bubble tea se convirtió en un símbolo de modernidad y estilo juvenil en Asia. En los años 90, su popularidad se expandió a países vecinos como Japón, Corea del Sur, China y Singapur, donde las tiendas especializadas empezaron a competir por ofrecer sabores nuevos, texturas diferentes y presentaciones llamativas. Ya no era solo una bebida: era un momento de socialización, una experiencia estética, y una parte de la cultura urbana.
+
+      <br>
+      <br>
+
+      El verdadero salto global ocurrió a partir de los años 2000, cuando la migración asiática y la globalización gastronómica llevaron el concepto a Estados Unidos, Europa y Oceanía. Cadenas como Chatime, Gong Cha, CoCo Fresh Tea & Juice y Tiger Sugar internacionalizaron el producto, adaptándolo a cada cultura y expandiendo el menú más allá del té tradicional: aparecieron las versiones con leche, frutas, sodas, cremas, jugos naturales y toppings como jaleas, perlas de tapioca de colores y bolitas de fruta que explotan en la boca. El bubble tea se convirtió en una bebida que unía culturas, colores y sabores.
+
+      <br>
+      <br>
+
+      En Latinoamérica, el fenómeno comenzó a sentirse entre 2010 y 2015, principalmente en países como Chile, México, Perú y Colombia, impulsado por la creciente fascinación hacia la cultura asiática, el K-pop, los doramas y la gastronomía oriental. En ese contexto, los jóvenes latinoamericanos encontraron en el bubble tea una bebida diferente, moderna y perfecta para compartir en redes sociales.
+
+      <br>
+      <br>
+
+      En Colombia, el bubble tea llegó inicialmente a través de pequeños emprendimientos y locales independientes en Bogotá, Medellín y Cali. Sin embargo, su verdadero crecimiento se dio a mediados de la década de 2010, cuando comenzaron a instalarse las primeras franquicias especializadas. Marcas como Momotea, nacida en Colombia en 2015, fueron pioneras en adaptar el concepto al paladar local, ofreciendo sabores tropicales, presentaciones coloridas y precios accesibles. Con el tiempo, se sumaron otras marcas internacionales como T4 (Tea for You) y Tea Republic, que reforzaron la presencia del bubble tea en centros comerciales y zonas universitarias.
+
+      <br>
+      <br>
+
+    Este auge coincidió con la transformación de los hábitos de consumo en el país: los jóvenes comenzaron a preferir productos personalizables, fotogénicos y que ofrecieran experiencias distintas, alejándose de las bebidas tradicionales como el café o los refrescos convencionales. El bubble tea encajó perfectamente con esta nueva tendencia: una bebida que se puede adaptar al gusto individual (tipo de té, nivel de azúcar, toppings), que es atractiva visualmente y que se asocia con un estilo de vida moderno y saludable.
+
+    <br>
+    <br>
+
+    Además, el crecimiento de las plataformas digitales y los servicios de delivery permitió que esta bebida se expandiera más allá de los locales físicos. Las redes sociales, especialmente Instagram y TikTok, jugaron un papel fundamental en la difusión del bubble tea como tendencia global: miles de videos mostraban el sonido de las burbujas, los colores vibrantes y la experiencia de “masticar el té”, lo que atrajo aún más curiosidad en los consumidores bogotanos.
+
+    <br>
+    <br>
+
+    Hoy en día, Bogotá se ha convertido en el epicentro del bubble tea en Colombia, con una oferta cada vez más amplia y competitiva. La bebida ha pasado de ser una novedad exótica a una categoría consolidada dentro del mercado de bebidas urbanas y gourmet. En las principales zonas comerciales, como Zona T, Chapinero, Cedritos y centros comerciales como Andino o Titán Plaza, el bubble tea es parte del paisaje cotidiano.
+
+    <br>
+    <br>
+
+    En este contexto surge Bubble Sebas, una marca que busca reinterpretar el bubble tea desde una perspectiva colombiana: combinando ingredientes locales como té de Suntea y Britaña, frutas frescas, gomitas y perlas tradicionales de tapioca, para ofrecer una bebida refrescante, divertida y adaptada a los gustos del consumidor nacional. La historia del bubble tea, desde su origen en Asia hasta su llegada a Bogotá, demuestra cómo una simple innovación en el té se transformó en un fenómeno cultural global, y cómo hoy representa una oportunidad única para crear una marca con identidad propia y sabor local.</p>
+    
+  </div>
+
+    <!-- 🔹 TAB: Actualidad -->
+    <div id="actualidad" class="tab">
+      <h1>Actualidad del mercado del Bubble Tea en Bogotá</h1>
+      <p>En la actualidad, Bogotá se ha consolidado como el epicentro del fenómeno del bubble tea en Colombia. Lo que hace pocos años era una bebida curiosa y exótica traída desde Asia, hoy forma parte de la oferta cotidiana de las zonas más dinámicas de la ciudad. Cafés, kioscos y locales especializados se han multiplicado en centros comerciales, zonas universitarias y puntos de alto flujo, generando una nueva categoría dentro del mercado de bebidas frías y personalizables.
+
+    El crecimiento del bubble tea en Bogotá no ha sido casual, sino el resultado de una tendencia global que llegó al país de forma progresiva y encontró en la capital el escenario perfecto para su expansión. Los consumidores jóvenes, abiertos a nuevas experiencias gastronómicas, con alta conexión digital y gusto por lo visual, fueron los primeros en adoptarlo. Las redes sociales jugaron un papel clave: las fotografías de vasos coloridos, perlas de tapioca flotando y combinaciones únicas de sabores empezaron a inundar Instagram y TikTok, despertando curiosidad y deseo en miles de personas. Así, el bubble tea pasó de ser una bebida “exótica” a convertirse en una experiencia “cool”, divertida y moderna, especialmente entre el público de 15 a 35 años.
+
+        <br>
+        <br>
+
+    Hoy, Bogotá concentra la mayor parte de la actividad económica y comercial del bubble tea en el país, con presencia tanto de marcas pioneras locales como de franquicias internacionales que empiezan a entrar al mercado. Entre las más reconocidas se encuentran Momotea, una marca colombiana que desde 2015 logró consolidar un modelo de franquicia rentable y con identidad local, expandiéndose rápidamente a diferentes ciudades del país; T4 (Tea For U), una franquicia taiwanesa que introdujo un formato más internacional, con tiendas que reflejan el estilo de vida moderno del consumidor asiático; y Tea Republic, que apostó por una propuesta más premium, centrada en la calidad de los ingredientes y la experiencia del consumidor en el punto de venta.
+
+      <br>
+      <br>    
+
+    Junto a estas marcas, también han surgido emprendimientos independientes que adaptan el concepto al gusto local, incorporando sabores tropicales y frutas colombianas como el maracuyá, el mango o la guanábana. Este enfoque ha permitido que el bubble tea no solo sea visto como una bebida importada, sino también como un producto con identidad propia dentro del contexto colombiano.
+
+      <br>
+      <br>
+
+    Otro actor relevante en el ecosistema es Bubble Planet, empresa que ha desempeñado un papel clave en la cadena de suministro, distribuyendo insumos esenciales como perlas de tapioca, jarabes, frutas deshidratadas y maquinaria para preparación. Su presencia ha facilitado que nuevos negocios entren al mercado, reduciendo barreras y fortaleciendo la competitividad del sector.
+
+      <br>
+      <br>
+        
+    Además, la digitalización ha transformado la forma en que se comercializa el producto. En Bogotá, los consumidores no solo encuentran el bubble tea en tiendas físicas, sino también en plataformas digitales de entrega como Rappi, Uber Eats o Didi Food, lo que amplía el alcance del mercado y consolida un modelo omnicanal. Esto ha permitido que marcas pequeñas tengan visibilidad sin depender de grandes locales, y que los consumidores puedan disfrutar de sus bebidas favoritas desde cualquier punto de la ciudad.
+
+      <br>
+      <br>    
+
+    El canal físico sigue siendo importante por su capacidad de ofrecer una experiencia sensorial completa: la preparación frente al cliente, los colores vibrantes, la música y el ambiente moderno de las tiendas hacen parte del atractivo del producto. Sin embargo, el canal online ha ganado terreno de manera significativa, convirtiéndose en una vía esencial para la fidelización y el crecimiento. Por eso, hoy las marcas que combinan ambos canales —con presencia digital activa y puntos físicos estratégicos— son las que logran mayor éxito en la capital.
+        
+        <br>
+        <br>
+
+    La competencia creciente ha hecho que las empresas se diferencien a través de estrategias de marca, diseño y experiencia. Algunas apuestan por precios accesibles para conquistar al público universitario, mientras que otras ofrecen bebidas premium con ingredientes importados. También se observan colaboraciones con influencers, promociones en redes sociales y la introducción de nuevas categorías de productos, como bubble sodas o smoothies con perlas, que buscan atraer a nuevos segmentos del mercado.
+
+      <br>
+      <br>
+
+    Finalmente, la llegada de franquicias internacionales, como la esperada entrada de Gong Cha —una de las marcas más reconocidas a nivel global—, refuerza la percepción de que el mercado colombiano ya ha alcanzado una masa crítica suficiente para sostener una competencia profesional y sostenida. Este contexto convierte a Bogotá en un espacio estratégico para nuevos emprendimientos, donde aún existe margen para diferenciarse mediante la innovación, la calidad del producto y una conexión genuina con los consumidores locales.
+      <br>
+      <br>
+
+    En conclusión, el bubble tea en Bogotá atraviesa una etapa de madurez temprana, con un crecimiento estable y un público fiel que busca experiencias nuevas. En este escenario, propuestas como Bubble Sebas tienen una gran oportunidad: ofrecer bebidas basadas en tés naturales como Suntea y Brtëaña, combinadas con frutas, gomitas y perlas tradicionales, pero con una identidad más colombiana, divertida y cercana. El mercado bogotano ya no necesita descubrir qué es el bubble tea; ahora busca quién lo hace mejor, con más autenticidad y sabor.</p>
+    </div>
+
+    <!-- 🔹 TAB: Sobre Nosotros -->
+    <div id="sobre-nosotros" class="tab">
+      <h2>Oportunidades de Bubble Sebas</h2>
+      <p>El mercado actual del bubble tea en Bogotá está en plena expansión, pero todavía conserva un espacio abierto para nuevas marcas que propongan algo diferente y auténtico. En ese escenario, Bubble Sebas tiene una oportunidad única para posicionarse como una alternativa fresca, local y moderna, que se conecta con los gustos y hábitos del consumidor bogotano.
+
+    La primera gran oportunidad está en la diferenciación por producto. Mientras muchas marcas compiten con fórmulas clásicas importadas, Bubble Sebas puede destacar al ofrecer una propuesta más colombiana y natural, basada en tés de Suntea o Brtëaña, combinados con bebidas tipo soda, frutas tropicales, gomitas y las tradicionales perlas del bubble tea. Esta fusión entre lo artesanal y lo divertido permite crear sabores nuevos con identidad local: maracuyá con soda, mango con té verde, piña con perlas de fruta… combinaciones que conservan la esencia del bubble tea, pero con un toque de sabor nacional.
+
+    <br>
+    <br>
+
+    La segunda gran ventaja competitiva está en la experiencia del consumidor. Hoy los jóvenes no solo compran una bebida: compran una sensación, una historia, un momento que pueden compartir en redes sociales. Bubble Sebas puede capitalizar esto a través de toppings explosivos, texturas inesperadas y presentaciones visuales llamativas, creando una experiencia divertida y visualmente atractiva. Cada vaso podría convertirse en una pequeña obra de arte comestible, ideal para el público que busca productos “instagrameables”, coloridos y diferentes.
+
+    <br>
+    <br>
+
+    En términos de negocio, también hay una gran oportunidad en la estrategia omnicanal. En Bogotá, el delivery y las compras en línea han ganado una fuerza enorme, especialmente entre el público joven. En ese sentido, Bubble Sebas puede combinar de forma inteligente lo físico y lo digital: un local pequeño, tipo café moderno, ubicado estratégicamente, que sirva como punto de experiencia, encuentro y visibilidad de marca; mientras que la plataforma web y los servicios de entrega amplían el alcance sin necesidad de abrir múltiples tiendas. Este modelo híbrido permite mantener bajos los costos operativos, aprovechar el auge del comercio digital y, al mismo tiempo, construir una marca sólida y reconocible.
+
+    <br>
+    <br>
+
+    Otro aspecto clave está en la comunicación y posicionamiento. El mercado colombiano valora cada vez más los productos con propósito y autenticidad. Si Bubble Sebas logra transmitir un mensaje claro —precio justo por calidad, opciones saludables y sin lactosa, enfoque sostenible y una estética “fashion/café moderno”— puede conectar con dos públicos importantes: los estudiantes que buscan algo divertido y accesible, y los jóvenes profesionales que desean un producto rápido, de buena calidad y con estilo. Ambos grupos son activos en redes sociales y tienden a fidelizarse con marcas que reflejan su personalidad y estilo de vida.
+
+    <br>
+    <br>
+
+    Finalmente, hay una oportunidad estratégica a largo plazo: el reposicionamiento del bubble tea como una bebida más versátil y cotidiana. Con su propuesta basada en té, soda y frutas, Bubble Sebas puede romper la percepción de que el bubble tea es solo una bebida “de antojo ocasional”, para convertirlo en una opción refrescante y funcional para cualquier momento del día. Así, podría competir no solo con otras tiendas de bubble tea, sino también con cafés, juguerías y bebidas embotelladas, ofreciendo una alternativa más sana, personalizable y emocionalmente atractiva.
+
+    <br>
+    <br>
+
+    En resumen, Bubble Sebas tiene la posibilidad de convertirse en la marca que tropicaliza y moderniza el bubble tea en Colombia, uniendo el sabor local con la tendencia global. Su mezcla única de ingredientes, su concepto visual moderno y su modelo de venta híbrido son el punto de partida ideal para construir una marca con identidad, sostenibilidad y alto potencial de crecimiento en el mercado bogotano.</p>
+
+    <h2>Análisis de la Demanda (Evolución de los determinantes y factores de decisión)</h2>
+    
+      Durante la última década, la demanda de bubble tea en Bogotá ha vivido una transformación profunda que refleja la combinación entre tendencias globales, cambios en el estilo de vida urbano y una nueva mentalidad de consumo. Lo que comenzó como una curiosidad traída desde Asia hacia 2014–2015, se convirtió en una categoría en crecimiento constante dentro del mercado de bebidas frías, especialmente entre los jóvenes de 15 a 35 años.
+
+      <br>
+      <br>
+
+      Desde 2015, la curva de demanda muestra un ascenso constante, pero es entre 2018 y 2023 cuando el crecimiento se acelera significativamente. Esto coincide con la consolidación de marcas locales —como Momotea, Tea Republic y T4— y con la aparición de distribuidores nacionales de insumos, que redujeron costos y facilitaron la entrada de nuevos emprendimientos. En ese mismo periodo, el bubble tea pasó de ser una “bebida de nicho” a un producto aspiracional y cotidiano, impulsado principalmente por la visibilidad en redes sociales.
+
+      <br>
+      <br>
+
+      Las plataformas digitales desempeñaron un papel crucial en esta evolución. Imágenes y videos de vasos coloridos, burbujeantes y personalizables inundaron Instagram, TikTok y Facebook, transformando el acto de consumir bubble tea en una experiencia visual tanto como gustativa. Esta “estetización del consumo” se convirtió en un motor clave de la demanda: la bebida ya no solo se compra por su sabor, sino por el valor social y emocional de compartirla.
+
+      <br>
+      <br>
+
+      Otro factor determinante ha sido la expansión del delivery y los hábitos “para llevar”. Bogotá, con su ritmo acelerado y largas distancias, favoreció el modelo de consumo rápido, permitiendo que los clientes accedieran al producto sin necesidad de estar en el punto físico. El crecimiento de aplicaciones como Rappi y Uber Eats amplificó el alcance de las marcas y elevó la frecuencia de compra, especialmente durante y después de la pandemia.
+
+      <br>
+      <br>
+
+      En términos de determinantes específicos de la demanda, el consumidor bogotano muestra una mezcla de racionalidad y emoción:
+
+      <br>
+      <br>
+
+      <strong> Personalización:</strong> es el factor más fuerte (valor estimado 9/10). El público busca controlar el nivel de azúcar, el tipo de té, el grado de hielo, los toppings y la base (con leche o sin ella). Este control refuerza la sensación de exclusividad y pertenencia.
+
+      <br>
+
+      <strong>Visibilidad y estética:</strong> con un peso de 8/10, el componente visual sigue siendo determinante. Las bebidas “fotogénicas” y coloridas generan decisiones de compra impulsivas y repetición por recomendación.
+
+      <br>
+
+      <strong>Conveniencia:</strong> también con 8/10, influye la cercanía de los puntos de venta y la rapidez del servicio. Los consumidores prefieren locales ubicados en zonas universitarias, centros comerciales o de fácil acceso.
+
+      <br>
+
+      <strong>Precio:</strong> tiene un peso moderado (7/10). El público objetivo está dispuesto a pagar un valor justo si percibe calidad y buena experiencia, pero precios muy altos reducen la frecuencia de compra.
+
+      <br>
+
+      <strong>Calidad percibida:</strong> (8/10) influye directamente en la fidelización. El sabor del té, la textura de las perlas y la frescura de los ingredientes determinan la recompra.
+      
+      <br>
+
+      <strong>Salud y bienestar:</strong> (5/10) aunque aún tiene menor peso, se observa una tendencia creciente hacia opciones más saludables, con menos azúcar, sin lácteos o con ingredientes naturales.
+
+      <br>
+
+      <strong>Variedad:</strong> (7/10) los consumidores valoran la posibilidad de probar nuevas combinaciones o ediciones limitadas.
+
+    </p>
+
+  </div>
+
+  <!-- 🧠 Script para cambiar pestañas -->
+  <script>
+    const tabs = document.querySelectorAll('.sub-navbar li');
+    const tabContents = document.querySelectorAll('.tab');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // quitar clase activa a todas las pestañas
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        // ocultar todas las secciones
+        tabContents.forEach(content => content.classList.remove('active'));
+
+        // mostrar la pestaña seleccionada
+        const target = tab.getAttribute('data-tab');
+        document.getElementById(target).classList.add('active');
+      });
+    });
+  </script>
+
+  <!-- 🧠 Script de búsqueda -->
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const productos = document.querySelectorAll(".producto");
+
+    searchInput.addEventListener("input", () => {
+      const searchTerm = searchInput.value.toLowerCase();
+
+      productos.forEach(producto => {
+        const title = producto.querySelector("h3").textContent.toLowerCase();
+        const description = producto.querySelector("p").textContent.toLowerCase();
+
+        if (title.includes(searchTerm) || description.includes(searchTerm)) {
+          producto.style.display = "block";
+        } else {
+          producto.style.display = "none";
+        }
+      });
+    });
+
+  </script>
+
+  <!-- 🔘 Botón flotante del ChatBot -->
+  <a href="chatbot.html" class="chatbot-btn" title="Habla con nuestro asistente">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="28px" height="28px">
+      <path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7l-4 4V6a2 2 0 0 1 2-2z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
