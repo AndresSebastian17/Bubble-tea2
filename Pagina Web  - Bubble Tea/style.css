@@ -1,0 +1,306 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* 🧋 Estilos para la sección de productos */
+.productos {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #fff, #f7f7f7);
+}
+
+.productos h2 {
+  font-size: 2em;
+  color: #1997a0;
+  margin-bottom: 30px;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.producto {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 15px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.producto h3 {
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.producto p {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.precio {
+  display: inline-block;
+  background-color: #1997a0;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* 🧭 Encabezado */
+header {
+  background-color: #ec3434;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* --- Barra superior deslizante --- */
+.top-banner {
+  width: 100%;
+  background-color: #555;
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+  z-index: 10002;
+}
+
+.top-banner p {
+  display: inline-block;
+  padding: 1px 0;
+  font-size: 14px;
+  animation: slideText 35s linear infinite;
+}
+
+.top-banner a {
+  color: #ffbebe;
+  text-decoration: underline;
+}
+
+@keyframes slideText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* 🔧 Separar el logo de la barra deslizante */
+header {
+  margin-top: 50px; /* Ajusta este valor según el tamaño de tu barra */
+}
+
+/* --- Navegación --- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 40px;
+  border-bottom: 2px solid #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo img {
+  height: 155px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Buscador */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #1997a0;
+  border-radius: 50px;
+  overflow: hidden;
+  width: 400px;
+}
+
+.search-bar input {
+  border: none;
+  padding: 10px 25px;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+.search-bar button {
+  background-color: #1997a0;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar button:hover {
+  background-color: #1997a0;
+  font-size: 20px;
+}
+
+/* Botones */
+.login-btn, .cart-btn {
+  background-color: #1997a0;
+  color: white;
+  padding: 12px 50px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover, .cart-btn:hover {
+  background-color: #18b4c5;
+}
+
+/* Botón flotante del ChatBot */
+.chatbot-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  z-index: 10000;
+}
+
+.chatbot-btn:hover {
+  background-color: #43a047;
+  transform: scale(1.1);
+}
+
+.sub-navbar {
+  background-color: #72acd3; /* Rojo como la barra */
+  font-family: Arial, sans-serif;
+}
+
+.sub-navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-navbar li {
+  margin: 0;
+  flex: 1; /* Para que todas las pestañas tengan el mismo ancho */
+  text-align: center;
+}
+
+.sub-navbar li a {
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.sub-navbar li a:hover {
+  background-color: #2f7885; /* Rojo más oscuro al pasar el mouse */
+}
+
+.sub-navbar li.active a {
+  border-bottom: 4px solid #fff; /* Indica la pestaña activa */
+}
+  .tab {
+    display: none;
+  }
+  .tab.active {
+    display: block;
+  }
+  .sub-navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  .sub-navbar li.active a {
+    font-weight: bold;
+    color: #000000;
+  }
+
+/* 🔹 Configuración base de pestañas */
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+/* 🔹 Estilo para secciones de texto */
+.origen,
+.actualidad,
+.sobre-nosotros {
+  max-width: 900px;        /* límite de ancho para mejor lectura */
+  margin: 40px auto;       /* centra el bloque horizontalmente */
+  padding: 20px 40px;      /* espacio interno: arriba/abajo 20px, lados 40px */
+  text-align: justify;     /* justifica los párrafos */
+  line-height: 1.7;        /* mejora legibilidad */
+  font-size: 1.1rem;       /* tamaño cómodo */
+  background-color: #fff;  /* opcional: fondo blanco si hay color detrás */
+  border-radius: 12px;     /* bordes suaves */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* leve sombra para separar visualmente */
+}
+
+/* 🔹 Centrar los títulos */
+.origen h2,
+.actualidad h2,
+.sobre-nosotros h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat con Bobi</title>
+  <link rel="stylesheet" href="style (Chat bot).css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+
+<body class="chat-body">
+  <div class="chat-container">
+    <!-- 🧋 Perfil del bot -->
+    <div class="bot-profile">
+      <img src="Boby.png" alt="Bobi" class="bot-avatar" />
+      <h1 class="bot-name">🧋 Bobi</h1>
+      <p class="bot-subtitle">Tu compañero burbujeante 💭</p>
+      <p class="bot-description">
+        Soy Bobi, un vaso de bubble tea viviente.  
+        Mis burbujas reflejan mis emociones — y me encanta charlar con curiosos como tú.  
+        Relájate, respira... y deja que las ideas burbujeen
+      </p>
+    </div>
+
+    <!-- 💬 Botones rápidos -->
+    <div class="quick-questions">
+      <button class="question-btn">¿Qué sabor te representa hoy?</button>
+      <button class="question-btn">¿Cuales son los mejores bubble teas, Bobi?</button>
+      <button class="question-btn">¿Hacen envíos a toda Bogotá?</button>
+      <button class="question-btn">Dime qué sabores tiene Bobi</button>
+    </div>
+
+    <!-- 🗨️ Área de mensajes -->
+      <div class="chat-messages" id="chatMessages"></div>
+
+      <!-- ✏️ Input -->
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Pregunta lo que quieras..." />
+        <button class="send-btn">➤</button>
+      </div>
+    </div>
+
+  <script>
+    const chat = document.getElementById("chatMessages");
+    const input = document.getElementById("userInput");
+    const sendBtn = document.querySelector(".send-btn");
+    const quickBtns = document.querySelectorAll(".question-btn");
+
+    // 🫧 RESPUESTAS DE BOBI
+    const respuestasBobi = {
+      "¿qué sabor te representa hoy?": "Hoy me siento a fresa con leche 🩷, ¡dulce y alegre!",
+      "¿cuáles son los mejores bubble teas, bobi?": "Los más pedidos son el de mango maracuyá, taro y fresa cremosa. 😋",
+      "¿hacen envíos a toda bogotá?": "¡Claro que sí! 🚚 Entregamos en toda Bogotá con amor y burbujas 🧋",
+      "dime qué sabores tiene bobi": "Tenemos sabores frutales, cremosos y clásicos como fresa, mango, taro, matcha y más 💚"
+    };
+
+    function crearBurbuja(texto, tipo) {
+      const burbuja = document.createElement("div");
+      burbuja.classList.add("message", tipo);
+      burbuja.textContent = texto;
+      return burbuja;
+    }
+
+    function enviarMensaje(textoUsuario) {
+      if (!textoUsuario.trim()) return;
+
+      // 🧍 CREAR BLOQUE COMPLETO
+      const bloque = document.createElement("div");
+      bloque.classList.add("chat-block");
+
+      // 🧍 Burbuja del usuario
+      const burbujaUser = crearBurbuja(textoUsuario, "user");
+      bloque.appendChild(burbujaUser);
+
+      input.value = "";
+      chat.appendChild(bloque);
+      chat.scrollTop = chat.scrollHeight;
+
+      // 💬 Respuesta de Bobi
+      setTimeout(() => {
+        const respuesta =
+          respuestasBobi[textoUsuario.toLowerCase()] ||
+          "¡Hmm! No tengo esa respuesta aún, pero estoy aprendiendo 💭🫧";
+
+        const burbujaBobi = crearBurbuja(respuesta, "bobi");
+        bloque.appendChild(burbujaBobi);
+
+        chat.scrollTop = chat.scrollHeight;
+      }, 600);
+    }
+
+    // 📩 Botón enviar
+    sendBtn.addEventListener("click", () => enviarMensaje(input.value));
+    input.addEventListener("keypress", e => {
+      if (e.key === "Enter") enviarMensaje(input.value);
+    });
+
+    // 💡 Botones de preguntas rápidas
+    quickBtns.forEach(btn => {
+      btn.addEventListener("click", () => enviarMensaje(btn.textContent));
+    });
+  </script>
+
+<a href="index.html" class="back-btn">
+  <i class="fas fa-arrow-rotate-left"></i>
+</a>
+
+</body>
+</html>
